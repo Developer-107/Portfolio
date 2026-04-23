@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@theme {
+    --font-sans:
+        'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
+    
+}
+
+html {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #1a1831;
+}
+
+.nav-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #AB47BC;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active {
+  @apply text-[#AB47BC];
+}
+
+.gradient-word-effect-1 {
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.gradient-word-effect-2 {
+    background: linear-gradient(
+        to right,
+        #a855f7 0%,
+        #a855f7 30%,
+        #ec4899 90%,
+        #ec4899 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+
+}
+
+.gradient-word-effect-3 {
+    background: linear-gradient(
+        to right,
+        #a855f7 0%,
+        #8c207f 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+
+}
+
+.fontSergoe {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+
+.mainH1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
