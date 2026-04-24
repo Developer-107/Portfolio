@@ -16,7 +16,7 @@ class ProjectController extends Controller
     public function index()
     {
         return Inertia::render('Home', [
-        'projects' => Project::with('stacks')->paginate(10)
+        'projectsPaginated' => Project::with('stacks')->latest()->paginate(10)
     ]);
 
     }

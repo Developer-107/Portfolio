@@ -9,7 +9,7 @@ export default function SkillsSection() {
                 <SectionHeader
                     titleFirstWord="My"
                     titleSecondWord="Skills"
-                    subTitle="Here are the technologies I've worked with."
+                    subTitle="Here are the technologies I've worked with"
                 />
                 <FeaturedSkills />
                 <SkillsGrid />
