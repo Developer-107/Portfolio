@@ -25,7 +25,7 @@ export default function ContactMeContainer() {
     ];
 
     return (
-        <div className="fontSergoe grid grid-cols-4">
+        <div className="fontSergoe lg:grid lg:grid-cols-4 flex flex-col lg:gap-0 gap-14 lg:mb-0 mb-10 lg:text-[16px] text-sm">
             <div className="col-span-3 flex flex-col gap-5">
                 <p className="leading-relaxed text-gray-300">
                     I enjoy working on modern, clean, and user-focused web
@@ -40,7 +40,7 @@ export default function ContactMeContainer() {
 
                     <ul className="space-y-3 text-gray-300">
                         {services.map((service, idx) => (
-                            <li key={idx} className="flex gap-1">
+                            <li key={idx} className="flex gap-1 xl:text-[16px] lg:text-sm text-xs">
                                 <span className="flex items-center gap-2 font-semibold text-white">
                                     <CheckCircle className="h-5 w-5 text-purple-500" />{' '}
                                     {service.name}
@@ -52,7 +52,7 @@ export default function ContactMeContainer() {
                 </div>
             </div>
 
-            <div className="col-span-1 mt-auto ml-auto flex flex-col gap-5">
+            <div className="col-span-1 mt-auto lg:ml-auto flex flex-col gap-5 lg:text-[16px] text-sm">
                 <div>
                     <p className="font-medium">Email</p>
                     <p className="text-gray-500">{email}</p>

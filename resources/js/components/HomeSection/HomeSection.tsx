@@ -20,7 +20,7 @@ export default function HomeSection() {
 
                 <div className="flex max-w-7xl items-center px-8 pt-20">
                     <div className="grid grid-cols-2">
-                        <div className="col-span-1 flex flex-col gap-7">
+                        <div className="lg:col-span-1 col-span-2 flex flex-col gap-7 lg:mb-0 mb-20">
                             <WelcomeMessage />
                             <TypeAnimationCustom />
                             <ProfileContactButtons />

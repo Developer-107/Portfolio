@@ -3,7 +3,7 @@ import ContactMeButton from './ContactMeButton';
 
 export default function ProfileContactButtons() {
     return (
-        <div className="fontSergoe flex gap-5 text-[17.7px] font-semibold">
+        <div className="fontSergoe flex gap-5 lg:text-[17.7px] text-[14px] font-semibold">
             <MyProjectsButton />
             <ContactMeButton />
         </div>

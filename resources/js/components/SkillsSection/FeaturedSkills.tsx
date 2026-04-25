@@ -156,7 +156,7 @@ export default function FeaturedSkills() {
     ];
 
     return (
-        <div className="fontSergoe grid grid-cols-4 gap-8">
+        <div className="fontSergoe grid lg:grid-cols-4 grid-cols-2 gap-8">
             {featuredSkills.map((skill, idx) => (
                 <div
                     key={idx}
@@ -165,11 +165,11 @@ export default function FeaturedSkills() {
                     <div className="flex w-full items-center justify-center self-center">
                         {skill.icon}
                     </div>
-                    <div className="flex h-full flex-col gap-2">
-                        <p className="mt-2 text-center text-xl font-bold">
+                    <div className="flex h-full flex-col gap-2 lg:justify-start items-center justify-center">
+                        <p className="mt-2 text-center lg:text-lg text-[16px] font-bold">
                             {skill.name}
                         </p>
-                        <p className="text-center font-medium text-wrap text-gray-500">
+                        <p className="text-center font-medium text-wrap text-gray-500 lg:text-sm text-xs">
                             {skill.description}
                         </p>
                     </div>

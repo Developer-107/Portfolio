@@ -1,8 +1,8 @@
 export default function AvatarSvg() {
     return (
-        <div className="col-span-2 flex items-center justify-center px-9">
+        <div className="col-span-2 flex items-center justify-center lg:px-9">
             <svg
-                width="454"
+                width="100%"
                 height="384"
                 viewBox="0 0 454 384"
                 fill="none"

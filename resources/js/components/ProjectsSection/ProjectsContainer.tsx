@@ -23,7 +23,7 @@ export default function ProjectsContainer({
     }, []);
 
     return (
-        <div className="columns-1 gap-6 space-y-6 sm:columns-2 lg:columns-3 mb-20">
+        <div className="mb-20 columns-1 gap-6 space-y-6 sm:columns-2 lg:columns-3">
             {loading
                 ? [...Array(3)].map((_, idx) => <ProjectSkeleton key={idx} />)
                 : projectsPaginated?.data.map((project) => (
@@ -32,16 +32,16 @@ export default function ProjectsContainer({
                           href={project?.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex flex-col overflow-hidden rounded-xl border border-gray-800 bg-[#181726] shadow-lg transition duration-500 hover:border-[#AB47BC] hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#a856f5]"
+                          className="flex flex-col overflow-hidden rounded-xl border border-gray-800 bg-[#181726] shadow-lg transition duration-500 hover:-translate-y-1 hover:border-[#AB47BC] hover:shadow-2xl hover:shadow-[#a856f5]"
                       >
                           <img src={project?.image} alt={project?.title} />
 
-                          <div className="fontSergoe flex flex-col gap-6 p-6 text-xl">
+                          <div className="fontSergoe flex flex-col gap-6 p-6 text-[16px] lg:text-lg">
                               <div className="flex flex-col gap-2 self-start">
                                   <div className="font-bold">
                                       {project.title}
                                   </div>
-                                  <div className="text-[16px] font-medium text-gray-500">
+                                  <div className="text-xs font-medium text-gray-500 lg:text-sm">
                                       {project.description}
                                   </div>
                               </div>
@@ -49,7 +49,7 @@ export default function ProjectsContainer({
                                   {project?.stacks?.map((stack: Stack) => (
                                       <div
                                           key={`${project?.id}-${stack?.id}`}
-                                          className="flex rounded-md bg-[#591c87] p-1 px-2 text-xs font-medium text-nowrap text-[#c083fc]"
+                                          className="flex rounded-md bg-[#591c87] p-1 px-2 text-[10px] font-medium text-nowrap text-[#c083fc] lg:text-xs"
                                       >
                                           {stack.name}
                                       </div>

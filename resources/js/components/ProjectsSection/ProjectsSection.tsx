@@ -11,7 +11,7 @@ export default function ProjectsSection({
         <div className="relative flex min-h-screen justify-center">
             <div
                 id="projects"
-                className="flex w-full max-w-7xl flex-col gap-10 pt-32"
+                className="flex w-full max-w-7xl flex-col gap-10 pt-32 px-8"
             >
                 <SectionHeader
                     titleFirstWord="My"

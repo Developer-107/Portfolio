@@ -1,11 +1,10 @@
-import { Link } from '@inertiajs/react';
 import MySkillsButton from './MySkillsButton';
 
 export default function WhoAmI() {
     return (
         <div className="col-span-3 flex flex-col gap-7">
-            <p className="text-2xl font-bold">Who am i?</p>
-            <p className="font-normal text-wrap text-gray-200">
+            <p className="lg:text-2xl text-xl font-bold">Who am i?</p>
+            <p className="font-normal text-wrap text-gray-200 lg:text-[16px] text-sm">
                 I am a full-stack web developer passionate about building
                 modern, fast, and user-focused web applications. I enjoy working
                 across both the front-end and back-end, creating seamless

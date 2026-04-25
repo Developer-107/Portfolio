@@ -9,7 +9,7 @@ export default function MySkillsButton() {
             spy={true}
             offset={0}
             activeClass="active"
-            className="group translation relative flex items-center self-start overflow-hidden rounded-full border border-[#a856f5] p-3.5 px-5.5 font-medium shadow-[#a856f5] duration-500 hover:-translate-y-1 hover:shadow-lg cursor-pointer"
+            className="group translation relative flex items-center self-start overflow-hidden rounded-full border border-[#a856f5] p-3.5 px-5.5 font-medium shadow-[#a856f5] duration-500 hover:-translate-y-1 hover:shadow-lg cursor-pointer lg:text-sm text-xs"
             style={{
                 background: 'linear-gradient(70deg, #a751ed, #6d28d9)',
             }}

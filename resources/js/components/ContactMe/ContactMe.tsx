@@ -6,7 +6,7 @@ export default function ContactMe() {
         <div className="relative flex min-h-screen justify-center bg-[#181726]">
             <div
                 id="contact"
-                className="flex w-full max-w-7xl flex-col gap-10 pt-32"
+                className="flex w-full max-w-7xl flex-col gap-10 pt-32 px-8"
             >
                 <SectionHeader
                     titleFirstWord="Contact"
